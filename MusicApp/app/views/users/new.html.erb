@@ -1,0 +1,15 @@
+<h2> Sign Up Here !</h2>
+
+<form action="<%= users_url %>" method="POST">
+    <label> Email:
+            <input type="text" name="user[email]" value="<%=@user.email%>" placeholder="email address"> <br/>
+    </label>
+
+    <label> Password:
+        <input type="password" name="user[password]" placeholder="password"> 
+    </label>
+
+
+    <input type="submit" value="submit">
+
+</form>
